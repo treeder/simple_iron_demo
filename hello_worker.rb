@@ -1,5 +1,4 @@
 # Worker code can be anything you want.
-puts ENV.inspect
 puts "Starting HelloWorker at #{Time.now}"
 puts "Payload: #{params}"
 puts "Simulating hard work for 5 seconds..."
