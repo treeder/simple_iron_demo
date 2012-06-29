@@ -2,7 +2,7 @@ These are very simple examples of using [Iron.io](http://www.iron.io) services. 
 the code to get a feel for how it works. To dig deeper and see more complicated examples, check out
 our examples repository at: https://github.com/iron-io/iron_worker_examples.
 
-# Runnning these examples.
+# Running these examples.
 
 * Create an iron.json file in this directory with your project_id (and token if you haven't set
 that in your environment or global .iron.json file). See [Configuration](http://dev.iron.io/articles/configuration/) for
