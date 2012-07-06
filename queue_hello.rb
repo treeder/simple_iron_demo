@@ -1,6 +1,16 @@
 require "iron_worker_ng"
 client = IronWorkerNG::Client.new
-100.times do |i|
+tasks = []
+1000.times do |i|
   puts "#{i}"
-  client.tasks.create("hello", "foo"=>"bar")
+  t = client.tasks.create("hello", "foo"=>"bar")
+  tasks << t
 end
+
+tasks.each_with_index do |t, i|
+  client.tasks.wait_for(t.id)
+  puts "#{i} - Log for #{t.id}:"
+  puts client.tasks.log(t.id)
+  puts
+end
+

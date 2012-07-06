@@ -1,0 +1,37 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    iron_cache (1.0.0)
+      iron_core (>= 0.1.4)
+    iron_core (0.1.5)
+      bundler (> 1.0.0)
+      rest
+      rest-client
+    iron_mq (1.9.1)
+      iron_core (>= 0.1.4)
+    iron_worker_ng (0.7.4)
+      bundler (> 1.0.0)
+      iron_core (>= 0.1.4)
+      zip
+    memcache-client (1.8.5)
+    mime-types (1.19)
+    net-http-persistent (2.7)
+    quicky (0.0.1)
+    redis (3.0.1)
+    rest (1.1.0)
+      rest-client (>= 0.3.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    zip (2.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  iron_cache
+  iron_mq
+  iron_worker_ng
+  memcache-client
+  net-http-persistent
+  quicky
+  redis

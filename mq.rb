@@ -3,7 +3,7 @@ require 'iron_mq'
 producer = Thread.new do
   mq = IronMQ::Client.new
   queue = mq.queue("my_queue")
-  200.times do |i|
+  1000.times do |i|
     puts "PRODUCER: POST MSG: #{i}"
     queue.post("This is a message #{i}")
   end

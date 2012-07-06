@@ -8,6 +8,8 @@ puts 'value cached for later use.'
 sleep 3
 puts 'sometime later...'
 
-item = cache.get("key")
-puts "Got value '#{item.value}' from cache."
-
+10.times do |i|
+  puts "Get item for request #{i}"
+  item = cache.get("key")
+  puts "Got value '#{item.value}' from cache."
+end
